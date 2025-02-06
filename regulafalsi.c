@@ -25,7 +25,7 @@ float regulafalsi(float xn, float xp) {
     float xpre, xnext;
     float c = (xn*f(xp) - xp*f(xn))/(f(xp) - f(xn));
     do {
-        float res = f(c);
+        float res = f(c); // f(xn) * f(c) 
         if(res < 0) {
             xn = c;
         }
